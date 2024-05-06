@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter';
+
+}
+
+body {
+  background-color: #2F3035;
+  /* background-color: yellow; */
+  /* background-color: chartreuse; */
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  /* background-color: aqua; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.child1 {
+  /* background-color: blue; */
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  display: flex;
+}
+
+.child2 {
+  /* background-color: rgb(38, 255, 0); */
+  grid-column: 1/2;
+  grid-row: 2/-1;
+}
+
+.child3 {
+  /* background-color: rgb(255, 0, 0); */
+  grid-column: 2/5;
+  grid-row: 2/-1;
+}
+
+.child4 {
+  /* background-color: yellow; */
+  grid-column: 5/-1;
+  grid-row: 2/-1;
+}
+
+.child5 {
+  /* background-color: rgb(255, 0, 183); */
+  grid-column: 1/-1;
+}
+
+.child6 {
+/* background-color: aqua; */
+  grid-column: 1/5;
+
+}

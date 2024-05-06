@@ -1,0 +1,239 @@
+.settings-cp-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.settings-cp-edit-profile-form,
+.settings-cp-update-password-form {
+    /* background: none;
+    background-color: aqua; */
+    margin-top: 20px;
+    box-shadow: 0px 0px 12px 7px rgba(152, 154, 169, 0.548);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: #393943;
+    min-width: 700px;
+    width: 30%;
+}
+
+.settings-cp-container>h2,
+.settings-cp-container>.settings-cp-edit-profile-form>h3,
+.settings-cp-container>.settings-cp-update-password-form>h3 {
+    color: white;
+    /* margin: 15px 0; */
+    margin-top: 15px;
+}
+
+.settings-cp-edit-profile-profile-pic {
+    margin: 5px 0;
+    background-color: #393943;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    /* background-color: #116DFE; */
+}
+
+.settings-cp-edit-profile-account-img-holder {
+    background-color: #474753;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    margin-top: 5px;
+    overflow: hidden;
+    /* background-color: #e53949; */
+}
+
+.settings-cp-edit-profile-account-img-holder>img {
+    /* margin: 15px 0; */
+    width: 100%;
+}
+
+.settings-cp-edit-profile-labels-inputs-container {
+    /* background-color: #e53949; */
+    display: flex;
+    width: 80%;
+
+}
+
+.settings-cp-update-password-labels-inputs-container {
+    display: flex;
+    width: 80%;
+    margin-top: 15px;
+}
+
+.settings-cp-edit-profile-labels {
+    /* background-color: aqua; */
+    width: 75%;
+    /* display: inline-block; */
+}
+
+.settings-cp-update-password-labels {
+    width: 75%;
+}
+
+/* .settings-cp-edit-profile-inputs {
+    background-color: blueviolet;
+    display: inline-block;
+} */
+
+
+.settings-cp-edit-profile-labels>label,
+.settings-cp-edit-profile-form>label {
+    /* margin: 7px 0; */
+    /* display: inline-block; */
+    /* margin-top: 5px; */
+    color: white;
+    display: block;
+    /* background-color: crimson; */
+    width: 80%;
+    margin-bottom: 11px;
+    /* background-color: #e53949; */
+}
+
+.settings-cp-update-password-labels>label {
+    color: white;
+    display: block;
+    /* background-color: crimson; */
+    width: 85%;
+    margin-bottom: 11px;
+
+}
+
+.settings-cp-edit-profile-form>li {
+    list-style: none;
+}
+
+
+/* .settings-cp-update-password-form{
+    margin-top: 20px;
+    box-shadow: 0px 0px 12px 7px rgba(152, 154, 169, 0.548);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+/*background-color: #393943;
+    min-width: 700px;
+    width: 30%; 
+} */
+
+
+
+
+/* .settings-cp-update-password-form>label>li, */
+/* .settings-cp-update-password-form>li, */
+/* .settings-cp-log-out>li, */
+.settings-cp-edit-profile-form>label>li,
+.settings-cp-edit-profile-inputs>li {
+    list-style: none;
+    display: inline-block;
+    /* margin-left: 15px; */
+    /* background-color: chartreuse; */
+    width: 100%;
+}
+
+/* .log-in-cp-sign-in-form>label>li> */
+.settings-cp-edit-profile-inputs>li>input,
+.settings-cp-edit-profile-form>label>li>input {
+
+    /* background-color: #e53949; */
+    box-sizing: border-box;
+    background-color: #474753;
+    border: none;
+    border-left: 4px solid #116DFE;
+    padding: 5px 15px;
+    color: white;
+    width: 100%;
+    margin: 0 0 3px 0;
+}
+
+.settings-cp-update-password-form>li,
+.settings-cp-update-password,
+.settings-cp-leave {
+    display: inline-block;
+    margin-bottom: 10px;
+    /* background-color: #e53949; */
+}
+
+.settings-cp-sub {
+    margin-bottom: 10px;
+    /* width: 100% */
+    /* background-color: #e53949; */
+}
+
+.settings-cp-sub>#edit-profile-submit {
+    margin-top: 5px;
+    /* width: 90%; */
+    width: 150px;
+    min-height: 50px;
+    height: 65%;
+    background-color: #116DFE;
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.settings-cp-sub>#edit-profile-submit:hover {
+    background-color: #116cfe5a;
+}
+
+.settings-cp-update-password>input {
+    margin-top: 5px;
+    /* width: 90%; */
+    width: 150px;
+    min-height: 50px;
+    height: 65%;
+    background-color: #116DFE;
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.settings-cp-update-password>input:hover {
+    background-color: #116cfe5a;
+
+}
+
+.settings-cp-log-out {
+    margin-top: 20px;
+    box-shadow: 0px 0px 12px 7px rgba(152, 154, 169, 0.548);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: #393943;
+    min-width: 700px;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.settings-cp-log-out>h3 {
+    color: white;
+    margin: 15px 0;
+    /* margin-top: 15px; */
+}
+
+.settings-cp-leave>#logout-submit {
+    margin-top: 5px;
+    /* width: 90%; */
+    width: 150px;
+    min-height: 50px;
+    height: 65%;
+    background-color: #e53949;
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.settings-cp-leave>#logout-submit:hover {
+    /* background-color: #116cfe5a; */
+    background-color: #e5394a72;
+}

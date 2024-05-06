@@ -1,0 +1,163 @@
+.log-in-cp-container {
+    background-color: #2F3035;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in-cp-main-body {
+    display: flex;
+    background-color: #393943;
+    min-width: 700px;
+    width: 30%;
+    box-shadow: 0px 0px 12px 7px rgba(152, 154, 169, 0.548)
+}
+
+.log-in-cp-register-section-card {
+    /* background-color: aqua; */
+    background: none;
+}
+
+.log-in-cp-welcome-img {
+    /* margin: 5px; */
+    min-width: 350px;
+    width: 50%;
+    /* background-color: yellow; */
+}
+
+.log-in-cp-welcome-img>img {
+    margin: 5px;
+    max-width: 97%;
+}
+
+.log-in-cp-register-section-card {
+    /* margin-left: 20px; */
+    /* margin-top: 20px; */
+    /* min-width: 350px; */
+    width: 50%;
+    /* height: 360px; */
+    /* background-color: aqua; */
+    /* background-color: blueviolet; */
+    /* justify-content: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in-cp-register-section {
+    /* background-color: red; */
+    /* width: 196px; */
+    width: 70%;
+    /* align-items: center; */
+}
+
+
+
+.log-in-cp-register-section>h1 {
+    font-family: 'Birthstone Bounce';
+    color: #116DFE;
+    font-weight: 500;
+    /* font-size: 35px; */
+    font-size: 2.2em;
+    /* background-color: aqua; */
+    text-align: center;
+    /* margin: auto; */
+}
+
+.log-in-cp-register-section>h3 {
+    /* font-family: 'Courier New', Courier, monospace; */
+    color: white;
+    margin: 10px 0;
+}
+
+.log-in-cp-register-section>.log-in-cp-reg-data {
+    list-style: none;
+}
+
+.log-in-cp-register-section>.log-in-cp-reg-data>.log-in-cp-sign-in-form {
+    /* background-color: chartreuse; */
+    background: none;
+}
+
+.log-in-cp-register-section>.log-in-cp-reg-data>form>li {
+    background-color: #474753;
+    margin: 7px 0;
+    width: 100%;
+    /* background-color: chartreuse; */
+}
+
+/* .log-in-cp-register-section>.log-in-cp-reg-data>form>#link>li>input, */
+.log-in-cp-register-section>.log-in-cp-reg-data>form>li>input {
+    /* background: transparent; */
+    box-sizing: border-box;
+    background-color: #474753;
+    border: none;
+    border-left: 4px solid #116DFE;
+    padding: 5px 15px;
+    color: white;
+    width: 100%;
+    /* background-color: chocolate; */
+}
+
+.log-in-cp-register-section>.log-in-cp-reg-data>form>.log-in-cp-sub {
+    background: none;
+}
+
+
+
+.log-in-cp-register-section>.log-in-cp-reg-data>form>.log-in-cp-link {
+    background: none;
+}
+
+
+.log-in-cp-register-section>.log-in-cp-reg-data>form>li>a {
+    display: block;
+    color: #116DFE;
+    text-decoration: none;
+    width: 100%;
+    text-align: right;
+    font-size: 12px;
+}
+
+.log-in-cp-register-section>.log-in-cp-reg-data>form>li>a:hover {
+    text-decoration: underline;
+}
+
+.log-in-cp-register-section>.log-in-cp-reg-data>form>li>input[type=submit] {
+    background-color: #116DFE;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 50px;
+    width: 100%;
+    margin-top: 5px;
+    height: 30px;
+    transition-duration: 0.4s;
+    /* border-left: 4px solid #116DFE; */
+}
+
+.log-in-cp-register-section>.log-in-cp-reg-data>form>li>input[type=submit]:hover {
+    background-color: #393943;
+    border: 2px solid #116DFE;
+}
+
+/* .log-in-cp-register-section>.log-in-cp-reg-data>form>>li>input, */
+
+.log-in-cp-register-section>.log-in-cp-reg-data>form>#link>li>input[type=button] {
+    background-color: #393943;
+    border: 2px solid #116DFE;
+    color: white;
+    font-size: 16px;
+    border-radius: 50px;
+    width: 100%;
+    margin-bottom: 5px;
+    height: 30px;
+    transition-duration: 0.4s;
+    /* border-left: 4px solid #116DFE; */
+}
+
+.log-in-cp-register-section>.log-in-cp-reg-data>form>#link>li>input[type=button]:hover {
+    background-color: #116DFE;
+    border: none;
+}

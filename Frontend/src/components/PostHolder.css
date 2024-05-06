@@ -1,0 +1,209 @@
+.post-section-container {
+    margin-top: 20px;
+    min-width: 550px;
+    width: 63%;
+
+    width: 80%;
+
+
+    /* height: 750px; */
+    border-radius: 10px;
+    background-color: #393943;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+}
+
+.post-section-background {
+    width: 93%;
+    height: 93%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+}
+
+.post-header-section {
+    width: 100%;
+    height: 100px;
+    /* background-color: brown; */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-header-section-partition {
+    width: 80%;
+    height: 100px;
+    /* background-color: rgb(42, 165, 58); */
+    display: flex;
+    align-items: center;
+}
+
+
+.post-header-section>.post-header-section-partition>.post-profilePic-container {
+    width: 75px;
+    height: 75px;
+}
+
+.post-header-section>.post-header-section-partition>.post-profilePic-container>.post-profilePic {
+    width: 60px;
+    height: 60px;
+}
+
+.post-header-section>.post-header-section-partition>.post-profilePic-container>.post-profilePic>.post-profile-img-background {
+    background-color: #393943;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.post-header-section>.post-header-section-partition>.post-profilePic-container>.post-profilePic>.post-profile-img-background>.post-profile-img-holder {
+    background-color: #474753;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 5px auto;
+
+}
+
+.post-header-section>.post-header-section-partition>.post-profilePic-container>.post-profilePic>.post-profile-img-background>.post-profile-img-holder>img {
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.post-account-info {
+    background-color: #393943;
+    margin-right: 10px;
+}
+
+.post-account-name-vri {
+    /* background-color: chartreuse; */
+    display: flex;
+    align-items: flex-end;
+}
+
+.post-account-name-vri>h2 {
+    font-weight: 500;
+    color: white;
+    user-select: none;
+}
+
+.post-veri {
+    /* background-color: white; */
+    width: 25px;
+    margin-left: 10px;
+    /* min-height: 5px; */
+}
+
+.post-veri>svg {
+    background-color: white;
+    border-radius: 50%;
+}
+
+.post-account-info>h3,
+.post-time>h3 {
+    font-weight: 500;
+    color: #6D6D6D;
+    font-size: 1.2em;
+    user-select: none;
+}
+
+.post-tools {
+    background-color: #474753;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.post-tools>.post-tools-svg-holder {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+
+.post-tools>.post-tools-svg-holder>svg {
+    fill: white;
+}
+
+.post-content-section>p {
+    color: #8B8B97;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.post-content-media-section {
+    /* background-color: blue; */
+    margin-top: 20px;
+    max-height: 300px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.post-content-media-section>.post-content-media-pic {
+    /* background-color: #474753; */
+    width: 180px;
+    height: 150px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.post-content-media-section>.post-content-media-pic>img {
+    max-width: 180px;
+    max-height: 150px;
+    /* background-color: aqua; */
+}
+
+.post-break-line-container {
+    margin: 15px 0;
+    width: 100%;
+    min-height: 4px;
+    /* background-color: brown; */
+}
+
+.post-break-line-container>.post-break-line {
+    background-color: #9799A8;
+    height: 4px;
+    width: 95%;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.post-footer-section {
+    width: 100%;
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.post-footer-section>#post-reaction {
+    /* background-color: coral; */
+    min-width: 40px;
+}
+
+.post-footer-section>#post-reaction>.post-svg {
+    display: inline-block;
+    width: 28px;
+    margin-right: 15px;
+}
+
+.post-footer-section>#post-reaction>.post-svg>svg {
+    fill: #9799A8;
+}
+
+.post-footer-section>#post-reaction>h3 {
+    display: inline-block;
+    font-size: 1.2em;
+    color: #9799A8;
+    user-select: none;
+}

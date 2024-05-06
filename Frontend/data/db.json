@@ -1,0 +1,93 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "User One",
+            "username": "username",
+            "password": "11111111",
+            "following": 71,
+            "followers": "1.6m",
+            "verified": true,
+            "profilePicture": "./img/profile.png",
+            "bio": "I am User One. Excited to share my thoughts!",
+            "posts": [
+                {
+                    "id": 1,
+                    "content": "This is my first post!",
+                    "picture": null,
+                    "likes": "1.3k",
+                    "commentNum": "1.3k",
+                    "comments": [{"username": "lorem", "content": "lorem ipsum"}],
+                    "repost": "5.3k"
+                },
+                {
+                    "id": 2,
+                    "content": "Just another day in the micro-blogging world.",
+                    "picture": "url-to-image",
+                    "likes": "1.1k",
+                    "commentNum": "1.3k",
+                    "comments": [],
+                    "repost": "5.3k"
+                },
+                {
+                    "id": 3,
+                    "content": "Feeling excited about my new project!",
+                    "picture": null,
+                    "likes": "1.7k",
+                    "commentNum": "1.3k",
+                    "comments": [],
+                    "repost": "5.3k"
+                },
+                {
+                    "id": 4,
+                    "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore similique aut repellendus dolor iusto. Id quidem eum labore possimus veniam.",
+                    "picture": null,
+                    "likes": "1.7k",
+                    "commentNum": "1.3k",
+                    "comments": [],
+                    "repost": "5.3k"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "username": "user2",
+            "password": "11111111",
+            "name": "User Two",
+            "following": 105,
+            "followers": "1.1k",
+            "verified": false,
+            "profilePicture": "./img/man.png",
+            "bio": "I am User Two. Excited to share my thoughts!",
+            "posts": [
+                {
+                    "id": 1,
+                    "content": "This is my first post!",
+                    "picture": null,
+                    "likes": "230",
+                    "commentNum": "111",
+                    "comments": [],
+                    "repost": "103"
+                },
+                {
+                    "id": 2,
+                    "content": "Just another day in the micro-blogging world.",
+                    "picture": "url-to-image",
+                    "likes": "1.3k",
+                    "commentNum": "1.3k",
+                    "comments": [],
+                    "repost": "5.3k"
+                },
+                {
+                    "id": 3,
+                    "content": "Feeling excited about my new project!",
+                    "picture": null,
+                    "likes": "1.3k",
+                    "commentNum": "1.3k",
+                    "comments": [],
+                    "repost": "5.3k"
+                }
+            ]
+        }
+    ]
+}

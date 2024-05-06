@@ -1,0 +1,15 @@
+/* .drop-down-post-cp>ul {
+    list-style: none;
+}
+
+.drop-down-post-cp>ul>li {
+    color: white;
+} */
+
+.post-tools {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    background-color: transparent;
+}

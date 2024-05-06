@@ -1,0 +1,179 @@
+.sign-up-cp-container {
+    background-color: #2F3035;
+    /* background-color: aqua; */
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-cp-main-body {
+    /* margin: auto; */
+    /* transform: translate(0, 28%); */
+    display: flex;
+    background-color: #393943;
+    /* background-color: aqua; */
+    /* justify-content: ; */
+    min-width: 700px;
+    width: 30%;
+    box-shadow: 0px 0px 12px 7px rgba(152, 154, 169, 0.548)
+}
+
+.sign-up-cp-welcome-img {
+    /* margin: 5px; */
+    min-width: 350px;
+    width: 50%;
+    /* background-color: yellow; */
+}
+
+.sign-up-cp-welcome-img>img {
+    margin: 5px;
+    /* width: 340px; */
+    max-width: 97%;
+}
+
+.sign-up-cp-register-section-card {
+    /* margin-left: 20px; */
+    /* margin-top: 20px; */
+    min-width: 350px;
+    width: 50%;
+    /* height: 360px; */
+    /* background-color: aqua; */
+    /* background-color: blueviolet; */
+    /* justify-content: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up-cp-register-section {
+    /* background-color: red; */
+    width: 70%;
+    /* margin: auto; */
+    /* transform: translate(0, 12%); */
+
+}
+
+.sign-up-cp-register-section>h3 {
+    /* font-family: 'Courier New', Courier, monospace; */
+    color: white;
+    /* background-color: chartreuse; */
+}
+
+.sign-up-cp-register-section>.sign-up-cp-reg-data {
+    list-style: none;
+    /* background-color: chocolate; */
+}
+
+.sign-up-cp-sign-up-form {
+    /* background-color: darkred; */
+    background: none;
+}
+
+.sign-up-cp-register-section>.sign-up-cp-reg-data>form>li {
+    /* background-color: #474753; */
+    margin: 5px 0;
+    width: 100%;
+    /* background-color: darkgreen; */
+}
+
+.sign-up-cp-register-section>.sign-up-cp-reg-data>form>li>input {
+    /* background: transparent; */
+    box-sizing: border-box;
+    background-color: #474753;
+    border: none;
+    border-left: 4px solid #116DFE;
+    padding: 2px 15px;
+    /* padding: 2px 0px; */
+    color: white;
+    width: 100%;
+    /* background-color: aqua; */
+    /* background: none; */
+}
+
+.sign-up-cp-register-section>.sign-up-cp-reg-data>form>.sub {
+    background: none;
+}
+
+.sign-up-cp-register-section>.sign-up-cp-reg-data>form>li>input[type=date] {
+    color: #9799a8;
+    width: 100%;
+}
+
+.sign-up-cp-register-section>.sign-up-cp-reg-data>form>li>input[type=date]:focus {
+    color: white;
+}
+
+.sign-up-cp-register-section>.sign-up-cp-reg-data>form>li>input[type=submit] {
+    background-color: #116DFE;
+    border: none;
+    color: white;
+    font-size: 1.0em;
+    border-radius: 50px;
+    min-width: 195px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 30px;
+    transition-duration: 0.4s;
+    /* border-left: 4px solid #116DFE; */
+}
+
+.sign-up-cp-register-section>.sign-up-cp-reg-data>form>li>input[type=submit]:hover {
+    background-color: #393943;
+    /* color: black; */
+    border: 2px solid #116DFE;
+}
+.sign-up-cp-register-section>.sign-up-cp-reg-data>form>li>input[type=submit]:disabled {
+    cursor: not-allowed;
+}
+
+.sign-up-cp-login-link {
+    /* background: none; */
+    color: #9799a8;
+    text-align: center;
+}
+
+.sign-up-cp-login-link>#link {
+    color: #116DFE;
+    text-decoration: none;
+}
+
+.sign-up-cp-login-link>#link:hover {
+    text-decoration: underline;
+}
+
+.sign-up-cp-success-page {
+    /* background-color: aqua; */
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-cp-success-page>h3 {
+    font-size: 1.5em;
+    color: white;
+}
+
+.sign-up-cp-success-page>p {
+    font-size: 1.1em;
+    color: white;
+}
+
+
+.instructions {
+    color: white;
+    color: red;
+    background: none;
+    border-radius: 10px;
+    font-size: 0.7em;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
