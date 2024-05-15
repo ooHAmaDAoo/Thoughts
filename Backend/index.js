@@ -1,15 +1,15 @@
 require("dotenv").config();
+const serverless = require("serverless-http");
 const express = require("express");
 const mongoose = require("mongoose");
 const User = require("./models/User");
 const Post = require("./models/Post");
-const bcrypt = require("bcrypt");
+// const bcrypt = require("bcrypt");
 const cors = require("cors");
 const app = express();
 const jwt = require("jsonwebtoken");
-const PORT = process.env.PORT || 8081;
 
-mongoose.connect("mongodb://0.0.0.0:27017/users");
+mongoose.connect("mongodb://16.170.240.173:27017/users");
 const db = mongoose.connection;
 app.use(cors());
 
@@ -17,6 +17,12 @@ db.on("error", console.error.bind(console, "connection error: "));
 db.once("open", () => {
     console.log("conneted to database");
 })
+
+app.use(express.json());
+app.get("/test", (req, res) => {
+    res.send("Working");
+    res.end();
+});
 
 const authenticateToken = (req, res, next) => {
     const authHeader = req.headers["authorization"];
@@ -33,7 +39,7 @@ const authenticateToken = (req, res, next) => {
     });
 }
 
-app.use(express.json({ limit: "50mb" }));
+// app.use(express.json({ limit: "50mb" }));
 
 // app.get("/user/:username", async (req, res) => {
 //     const { username } = req.params;
@@ -77,12 +83,17 @@ app.post("/signup", async (req, res) => {
     // const month = birthdate.getMonth();
     // const day = 
     // const bDate = new Date(`${birthdate}`);
-    const hashedPassword = await bcrypt.hash(password, 10);
+
+
+
+    // 
+    // const hashedPassword = await bcrypt.hash(password, 10);
+    // 
 
     const newUser = new User({
         username,
         name: name ? name : "User",
-        password: hashedPassword,
+        password,
         email,
         firstname,
         lastname,
@@ -96,6 +107,7 @@ app.post("/signup", async (req, res) => {
         posts: []
     });
 
+    
     await newUser.save();
     res.status(201).json({ success: true, message: "New user has been created successfully" });
 })
@@ -121,7 +133,12 @@ app.post("/login", async (req, res) => {
     //     return res.status(400).json({ status: false, message: "error hashing password" });
 
     // (user.password !== hashedPassword)
-    const match = await bcrypt.compare(password, user.password);
+
+    // 
+    // const match = await bcrypt.compare(password, user.password);
+    const match = password === user.password;
+    // 
+
     if (!match)
         return res.status(400).json({ status: false, message: "wrong password" });
 
@@ -713,11 +730,13 @@ app.put("/unfollow", authenticateToken, async (req, res) => {
     // return res.status(200).json({ status: true, message: "user has been unfollowed successfully" });
 })
 
-app.use("*", (req, res) => {
-    res.sendStatus(404);
-})
+// app.use("*", (req, res) => {
+//     res.sendStatus(404);
+// })
 
-app.listen(PORT, () => {
-    console.log("Listening on port", PORT);
-});
 
+// app.listen(PORT, () => {
+//     console.log("Listening on port", PORT);
+// });
+
+module.exports.handler = serverless(app);

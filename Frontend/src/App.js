@@ -36,15 +36,12 @@ function App() {
         setData(data);
       })
       .catch((err) => {
-        // console.log("ERR: ", err);
       })
   }, []);
 
 
-  // console.log(data);
   let user;
   (data) ? user = data[0] : console.log("na data yet")
-  // console.log(user);
 
   return (
     <Router>
@@ -62,7 +59,6 @@ function App() {
               <div className='child3'>
                 <NewPost />
                 <TimeLine />
-                {/* <PostHolder /> */}
               </div>
               <div className='child4'>
                 <WhoToFollow />
@@ -70,7 +66,6 @@ function App() {
             </div>
 
           </PrivateRoute>} />
-        {/* <Route path='/' element={<><Header /> <NewPost/></>} /> */}
         <Route path='/login' element={<PrivateRoute login={true}>
           <Header />
           <LogInPage />
@@ -88,7 +83,6 @@ function App() {
             </div>
             <div className='child3'>
               <SearchPage />
-              {/* <PostHolder /> */}
             </div>
             <div className='child4'>
               <WhoToFollow />

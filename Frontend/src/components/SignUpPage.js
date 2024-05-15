@@ -1,10 +1,8 @@
 import './SignUpPage.css'
-// import WelcomeImg from './img/1.jpeg'
-// import WelcomeImg from './img/2.jpeg'
 import WelcomeImg from './img/4.jpg'
+import WelcomeImg from 'https://cs391-project.s3.eu-north-1.amazonaws.com/img/4.jpg'
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-// import WelcomeImg from './img/3.png'
 const user_regex = /^[a-zA-Z]{5,50}$/;
 const pwd_regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 
