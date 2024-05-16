@@ -1,11 +1,11 @@
 import './NewPost.css';
 // import { ReactComponent as PostIconSvg } from './img/noun-post-icon.svg'
-// import { ReactComponent as PostIconSvg } from './img/post-icon.svg';
-import { ReactComponent as PostIconSvg } from 'https://cs391-project.s3.eu-north-1.amazonaws.com/img/post-icon.svg';
-// import { ReactComponent as PhotoIconSvg } from './img/photo-icon.svg';
-import { ReactComponent as PhotoIconSvg } from 'https://cs391-project.s3.eu-north-1.amazonaws.com/img/photo-icon.svg';
-// import { ReactComponent as VideoIconSvg } from './img/video-icon.svg';
-import { ReactComponent as VideoIconSvg } from 'https://cs391-project.s3.eu-north-1.amazonaws.com/img/video-icon.svg';
+import { ReactComponent as PostIconSvg } from './img/post-icon.svg';
+// import { ReactComponent as PostIconSvg } from 'https://cs391-project.s3.eu-north-1.amazonaws.com/img/post-icon.svg';
+import { ReactComponent as PhotoIconSvg } from './img/photo-icon.svg';
+// import { ReactComponent as PhotoIconSvg } from 'https://cs391-project.s3.eu-north-1.amazonaws.com/img/photo-icon.svg';
+import { ReactComponent as VideoIconSvg } from './img/video-icon.svg';
+// import { ReactComponent as VideoIconSvg } from 'https://cs391-project.s3.eu-north-1.amazonaws.com/img/video-icon.svg';
 import { useState, useEffect } from 'react';
 // import { Link } from 'react-router-dom';
 import DragDrop from './DragDrop';

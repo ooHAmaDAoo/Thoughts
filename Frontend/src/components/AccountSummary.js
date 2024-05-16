@@ -1,7 +1,7 @@
 import './AccountSummary.css'
 import { Link } from 'react-router-dom';
-// import verviedPadge from './img/verified-icon.svg'
-import verviedPadge from '.https://cs391-project.s3.eu-north-1.amazonaws.com/img/verified-icon.svg'
+import verviedPadge from './img/verified-icon.svg'
+// import verviedPadge from '.https://cs391-project.s3.eu-north-1.amazonaws.com/img/verified-icon.svg'
 import { useState, useEffect, useContext } from 'react';
 import { AuthContext } from "../AuthContext";
 import { formatNumber } from "./SharedFunctions"
