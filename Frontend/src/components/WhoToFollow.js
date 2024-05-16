@@ -1,8 +1,6 @@
 import './WhoToFollow.css';
 import { ReactComponent as RefreshPic } from './img/refresh_icon.svg';
-// import { ReactComponent as RefreshPic } from 'https://cs391-project.s3.eu-north-1.amazonaws.com/img/refresh_icon.svg';
 import { ReactComponent as PlusPic } from './img/plus-icon.svg'
-// import { ReactComponent as PlusPic } from 'https://cs391-project.s3.eu-north-1.amazonaws.com/img/plus-icon.svg'
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 

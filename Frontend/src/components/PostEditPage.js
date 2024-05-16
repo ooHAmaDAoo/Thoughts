@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import "./PostEditPage.css"
 import { useParams } from "react-router-dom";
 import verviedPadge from './img/verified-icon.svg';
-// import verviedPadge from 'https://cs391-project.s3.eu-north-1.amazonaws.com/img/verified-icon.svg';
 import { convertToBase64 } from "./SharedFunctions";
 
 

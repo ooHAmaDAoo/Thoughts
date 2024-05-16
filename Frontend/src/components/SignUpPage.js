@@ -1,6 +1,5 @@
 import './SignUpPage.css'
 import WelcomeImg from './img/4.jpg'
-// import WelcomeImg from 'https://cs391-project.s3.eu-north-1.amazonaws.com/img/4.jpg'
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 const user_regex = /^[a-zA-Z]{5,50}$/;

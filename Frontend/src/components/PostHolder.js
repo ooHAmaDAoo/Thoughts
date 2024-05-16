@@ -1,20 +1,12 @@
 import './PostHolder.css';
 // import profilePic from './img/profile.png';
 import DropDownPost from './DropDownPost';
-// import { ReactComponent as VerificationSvg } from './img/verified-icon.svg';
 import verviedPadge from './img/verified-icon.svg';
-// import verviedPadge from 'https://cs391-project.s3.eu-north-1.amazonaws.com/img/verified-icon.svg';
-// import { ReactComponent as VerificationSvg } from './img/verified-icon.svg';
 import { ReactComponent as DotsSvg } from './img/dots-icon.svg'
-// import { ReactComponent as DotsSvg } from 'https://cs391-project.s3.eu-north-1.amazonaws.com/img/dots-icon.svg'
 import { ReactComponent as LikeSvg } from './img/heart-icon.svg';
-// import { ReactComponent as LikeSvg } from 'https://cs391-project.s3.eu-north-1.amazonaws.com/img/heart-icon.svg';
 import { ReactComponent as ShareSvg } from './img/share-icon.svg';
-// import { ReactComponent as ShareSvg } from 'https://cs391-project.s3.eu-north-1.amazonaws.com/img/share-icon.svg';
 import { ReactComponent as CommentSvg } from './img/comment-dots-icon.svg';
-// import { ReactComponent as CommentSvg } from 'https://cs391-project.s3.eu-north-1.amazonaws.com/img/comment-dots-icon.svg';
 import { ReactComponent as RepostSvg } from './img/repost-icon.svg';
-// import { ReactComponent as RepostSvg } from 'https://cs391-project.s3.eu-north-1.amazonaws.com/img/repost-icon.svg';
 import { useState } from 'react';
 
 

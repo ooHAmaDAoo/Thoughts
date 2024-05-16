@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import './SearchPage.css'
 // import profilePic from './img/profile.png';
 import { ReactComponent as SearchPic } from './img/search_icon.svg';
-// import { ReactComponent as SearchPic } from 'https://cs391-project.s3.eu-north-1.amazonaws.com/img/search_icon.svg';
 
 
 function SearchPage() {
