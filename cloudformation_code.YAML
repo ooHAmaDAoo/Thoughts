@@ -1,0 +1,71 @@
+Resources:
+  Backend:
+    Type: AWS::Lambda::Function
+    Properties:
+      Code: {}
+      Role: <String>
+  CS391Project:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub ${AWS::StackName}-cs391proj-${AWS::AccountId}
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: aws:kms
+              KMSMasterKeyID: alias/aws/s3
+      PublicAccessBlockConfiguration:
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+  CS391ProjectBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref CS391Project
+      PolicyDocument:
+        Id: RequireEncryptionInTransit
+        Version: '2012-10-17'
+        Statement:
+          - Principal: '*'
+            Action: '*'
+            Effect: Deny
+            Resource:
+              - !GetAtt CS391Project.Arn
+              - !Sub ${CS391Project.Arn}/*
+            Condition:
+              Bool:
+                aws:SecureTransport: 'false'
+  BackendAPI:
+    Type: AWS::Serverless::Api
+    Properties:
+      Name: !Sub
+        - ${ResourceName} From Stack ${AWS::StackName}
+        - ResourceName: BackendAPI
+      StageName: Prod
+      DefinitionBody:
+        openapi: '3.0'
+        info: {}
+        paths:
+          /{proxy+}:
+            x-amazon-apigateway-any-method:
+              responses: {}
+      EndpointConfiguration: REGIONAL
+      TracingEnabled: true
+      Cors:
+        MaxAge: 5
+  CS391:
+    Type: AWS::EC2::Instance
+    Properties: {}
+  MongoDB:
+    Type: AWS::EC2::Instance
+    Properties: {}
+Transform: AWS::Serverless-2016-10-31
+Metadata:
+  AWS::Composer::Groups:
+    Group:
+      Label: forntend
+      Members:
+        - CS391
+        - CS391Project
+    Group2:
+      Label: Databse
+      Members:
+        - MongoDB
